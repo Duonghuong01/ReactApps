@@ -1,3 +1,4 @@
+import { createBrowserHistory } from "history";
 import React from "react";
 import { Navigate, withRouter } from "react-router";
 class Home extends React.Component{ 
@@ -7,7 +8,7 @@ class Home extends React.Component{
 //         },3000)
 //     }
     render(){
-        const history = window.location;
+        const history = createBrowserHistory();
         console.log("chekc props: ",history)
         return (
             <>
